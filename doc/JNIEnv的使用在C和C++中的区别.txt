@@ -1,0 +1,19 @@
+对于JNIEnv *env来说，在C中调用：
+
+(*env)->NewStringUTF(env, "Hello from JNI!");
+
+而在C++中如果按照上述调用则会发生'base operand of '->' has non-pointer type '_JNIEnv''错误，需要如下调用：
+
+env->NewStringUTF("Hello from JNI!");
+
+原因：参见jni.h中对于JNIEnv的定义：
+
+#if defined(__cplusplus)
+
+typedef _JNIEnv JNIEnv;
+
+#else
+
+typedef const struct JNINativeInterface* JNIEnv;
+
+#endif

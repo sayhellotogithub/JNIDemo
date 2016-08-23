@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iblogstreet.temcontrol.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="温度控制器"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_margin="10dp"
+              android:gravity="center_horizontal"
+              android:id="@+id/tvTem"
+              android:text="current tem 12"
+              android:layout_height="wrap_content"/>
+    <Button android:layout_width="match_parent"
+            android:onClick="start"
+            android:text="start"
+            android:layout_height="wrap_content"/>
+    <Button android:layout_width="match_parent"
+           android:onClick="stop"
+            android:text="stop"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

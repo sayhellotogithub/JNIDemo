@@ -38,3 +38,7 @@ captures/
 
 # Keystore files
 *.jks
+/alipay/alipay.iml
+/app/app.iml
+/JniArray/JniArray.iml
+/JniEncryDemo/app.iml

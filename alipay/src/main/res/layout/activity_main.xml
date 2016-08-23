@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iblogstreet.alipay.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="支付宝支付"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <EditText android:id="@+id/tv_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="admin"
+              android:hint="请输入用户名"/>
+    <EditText android:id="@+id/tv_pwd"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="123"
+              android:inputType="textPassword"
+              android:hint="请输入密码"/>
+    <EditText android:id="@+id/tv_money"
+              android:inputType="number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="123"
+              android:hint="请输入金额"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pay"
+            android:text="支付"/>
+
+</LinearLayout>
